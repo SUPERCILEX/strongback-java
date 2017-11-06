@@ -1,0 +1,7 @@
+dependencies {
+    compile project(':strongback')
+    compile project(':strongback-testing')
+
+    compile "org.mockito:mockito-core:2.9.0"
+    compile "org.easytesting:fest-assert:1.4"
+}

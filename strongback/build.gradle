@@ -1,0 +1,8 @@
+dependencies {
+    compile "edu.wpi.first.wpilibj:wpilibj-java:2017.3.1-20170819010033-68-ge1195e8"
+    compile "edu.wpi.first.wpilibj:wpilibj-jni:2017.3.1-20171011234223-117-gf0cc623"
+    compile "edu.wpi.first.wpilibj:wpilibj-jniShared:2017.3.1-20171011234223-117-gf0cc623"
+    compile "edu.wpi.first.wpilib:SmartDashboard:2.0.3-20170227114112-1-ge6e275d"
+    compile "edu.wpi.first.wpilib.networktables.java:NetworkTables:3.1.7"
+    compile "thirdparty.frc.ctre:Toolsuite-Java:5.0.2.1"
+}

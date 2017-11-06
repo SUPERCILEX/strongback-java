@@ -1,0 +1,1 @@
+include ':strongback', ':strongback-testing', ':strongback-tests'
