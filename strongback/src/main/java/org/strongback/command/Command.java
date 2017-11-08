@@ -128,11 +128,11 @@ public abstract class Command {
     public void end() {
     }
 
-    final Set<Requirable> getRequirements() {
+    public final Set<Requirable> getRequirements() {
         return requirements;
     }
 
-    final double getTimeoutInSeconds() {
+    public final double getTimeoutInSeconds() {
         return timeout;
     }
 
@@ -145,7 +145,7 @@ public abstract class Command {
         this.interruptible = false;
     }
 
-    final boolean isInterruptible() {
+    public final boolean isInterruptible() {
         return interruptible;
     }
 
