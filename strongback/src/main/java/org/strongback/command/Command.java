@@ -111,8 +111,8 @@ public abstract class Command {
     /**
      * Signal that this command has been interrupted before {@link #initialize() initialization} or {@link #execute() execution}
      * could successfully complete. A command is interrupted when the command is canceled, when the robot is shutdown while the
-     * command is still running, or when {@link #initialize()} or {@link #execute()} throw exceptions. Note that if this method
-     * is called, then {@link #end()} will not be called on the command.
+     * command is still running, or when {@link #initialize()} or {@link #execute()} throw exceptions. {@link #end()} will
+     * be called immediately after this method finishes executing.
      * <p>
      * By default this method does nothing.
      */
@@ -121,7 +121,7 @@ public abstract class Command {
 
     /**
      * Perform one-time clean up of the resources used by this command and typically putting the robot in a safe state. This
-     * method is always called after {@link #execute()} returns {@code true} unless {@link #interrupted()} is called.
+     * method is always called after {@link #execute()} returns {@code true} or {@link #interrupted()} is called.
      * <p>
      * By default this method does nothing.
      */

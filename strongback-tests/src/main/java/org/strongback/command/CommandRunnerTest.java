@@ -117,7 +117,7 @@ public class CommandRunnerTest {
 
     protected void assertInterrupted( WatchedCommand watched ) {
         assertThat(watched.isInterrupted()).isTrue();
-        assertThat(watched.isEnded()).isFalse();
+        assertThat(watched.isEnded()).isTrue();
     }
 
     protected void assertExecutedAtLeast( WatchedCommand watched, int minimum ) {

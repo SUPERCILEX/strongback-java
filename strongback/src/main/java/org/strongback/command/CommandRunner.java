@@ -152,6 +152,7 @@ final class CommandRunner {
             try {
                 listener().record(command, state);
                 command.interrupted();
+                command.end();
             } catch (Throwable t) {
                 logger().error(t, "Error while interrupting " + command.getClass().getName() + " command: " + command);
             }

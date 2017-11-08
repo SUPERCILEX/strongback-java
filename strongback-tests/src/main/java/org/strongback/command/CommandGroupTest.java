@@ -86,7 +86,7 @@ public class CommandGroupTest {
         scheduler.submit(r2);
 
         scheduler.execute(0);
-        assertThat(list).isEqualTo(listOf("R0 inter", "R1 init", "R1 exe", "R1 end" ));
+        assertThat(list).isEqualTo(listOf("R0 inter", "R0 end", "R1 init", "R1 exe", "R1 end"));
         list.clear();
     }
 
@@ -112,7 +112,7 @@ public class CommandGroupTest {
 
         scheduler.submit(r3);
         scheduler.execute(1);
-        assertThat(list).isEqualTo(listOf("R1 inter", "R3 init", "R3 exe", "R3 end" ));
+        assertThat(list).isEqualTo(listOf("R1 inter", "R1 end", "R3 init", "R3 exe", "R3 end"));
         list.clear();
 
         scheduler.execute(2);
